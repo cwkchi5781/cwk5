@@ -1,0 +1,21 @@
+Different type of divs:
+
+<header></header>
+<section></section>
+<footer></footer>
+<nav></nav>
+
+The positives of using these tag names is that web crawling bots will look that the text inside of these sections.
+This makes a website more likely to show up on a google search when you want it too.
+
+Web crawlers also look at the title tag inside of the header tag
+
+
+Link to the teacher's github:
+    https://github.com/nirmic/projects/
+    https://nirmic.github.io/projects/
+    
+
+
+Javascript Rant:
+Java

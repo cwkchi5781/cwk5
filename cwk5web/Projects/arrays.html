@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--<link rel="stylesheet" href="somefile.css" type="text/css"/>-->
+        <style>
+        </style>
+    </head>
+<body>
+    <h1>Array Maths</h1>
+    
+    <p>Do stuff with arrays</p>
+    
+    <div id="arrayItems">
+        Array Item 1: <input type="number" name="quantity">
+        Array Item 2: <input type="number" name="quantity">
+        Array Item 3: <input type="number" name="quantity">
+    </div>
+    
+    <p>
+        <button type="button" onClick="arraySum()">Total array sum:</button>
+        <label id="arraySum"></label>
+    </p>
+    <p>
+        <button type="button" onClick="arrayAverage()">Average array value:</button>
+        <label id="arrayAverage"></label>
+    </p>
+    <p>
+        <button type="button" onClick="biggestValue()">Biggest value:</button>
+        <label id="biggest"></label>
+    </p>
+    <p>
+        <button type="button" onClick="rotateArray()">Rotate array:</button>
+        <label id="rotateArray"></label>
+    </p>
+    <p>
+        <button type="button" onClick="sortArray()">Sort array:</button>
+        <label id="sortArray"></label>
+    </p>
+    <p>
+        <button type="button" onClick="arrayShuffle()">Shuffle array:</button>
+        <label id="arrayShuffled"></label>
+    </p>
+    
+    
+    <script>
+    
+    
+    function getArray(){
+        var arrayinputs = document.getElementById("arrayItems");
+        var arrayInputs = arrayinputs.getElementsByTagName("input")
+        var array = [];
+        for (var i=0; i< arrayInputs.length; i++){
+            array[i] = parseInt(arrayInputs[i].value);
+        }
+        return array;
+    }
+    
+    function arrayAverage(){
+        var array = getArray();
+        var total = 0;
+        for (var i=0; i < array.length; i++){
+            total = total + array[i];
+            console.log(total);
+        }
+        total = total/array.length;
+        var arraySumOP = document.getElementById("arrayAverage");
+        arraySumOP.innerHTML = total;
+        
+            
+    }
+    
+    function arraySum(){
+        var array = getArray();
+        var total = 0;
+        for (var i=0; i < array.length; i++){
+            total = total + array[i];
+            console.log(total);
+        }
+     
+        var averageOP = document.getElementById("arraySum");
+        averageOP.innerHTML = total;
+    }
+    
+    function biggestValue(){
+        var array = getArray();
+        var biggest = array[0];
+        for (var i=1; i < array.length; i++){
+            if (array[i] > biggest){
+                biggest = array[i];
+            }
+        }
+        
+        var biggestOP = document.getElementById("biggest")
+        biggestOP.innerHTML = biggest;
+    }
+    
+    function rotateArray(){
+        //rotates an array by 180%
+        var array = getArray();
+        var rotatedArray = [];
+        for (var i=0; i < array.length; i++){
+            var switchIndex = array.length - i - 1;
+            var temp = array[switchIndex]
+            rotatedArray.push(temp)
+        }
+        
+        var rotateArrayOP = document.getElementById("rotateArray");
+        rotateArrayOP.innerHTML = rotatedArray;
+    }
+    
+    function sortArray(){
+        var array = getArray();
+        var sortedArray = [];
+        while (array.length > 0) {
+            var smallest = 99999999999;
+            for (var i=0; i < array.length; i++){
+                if (array[i] < smallest){
+                    smallest = array[i];
+                }
+            }
+            sortedArray.push(array.pop(smallest));
+        }
+        var sortArrayOP = document.getElementById("sortArray");
+        sortArrayOP.innerHTML = sortedArray;
+    }
+    
+    function shuffleArray(){
+        var array = getArray();
+        var currentIndex = array.length;
+        var temporaryValue, randomIndex;
+        
+        for(i = 0; i < array.length; )
+        
+        
+        var arrayShuffle = document.getElementById("arrayShuffled");
+        arrayShuffle.innerHTML = array;
+    }
+    </script>
+</body>
+</html>
