@@ -15,7 +15,7 @@ function OnTileClick(card, cardValue) {
         if (flippedCards[0].innerHTML === flippedCards[1].innerHTML){
             flippedCardsCount += 2;
             flippedCards = [];
-            isOverOver();
+            IsGameOver();
         }
         else{
             setTimeout(FlipCardBack, 700);

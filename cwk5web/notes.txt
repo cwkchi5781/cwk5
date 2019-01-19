@@ -18,4 +18,33 @@ Link to the teacher's github:
 
 
 Javascript Rant:
-Java
+
+setTimeout(function, time in milliseconds)
+    a function that makes the computer wait before running the inputted function adress by making a timer. 
+    This is NOT a delay because a delay would stop all other code during the wait time but this does not. 
+
+
+jQuery notes:
+    $(document).ready()
+        This tells the html script in jQuery to wait until the html is loaded before loading all of the javascript
+        This means you have to put all of the code in between the ()s.
+        
+    $(divName).html(content)
+        var content = string
+            sets the inner html of a div 
+    
+    $(divName).css(content)
+        var content = css code 
+            sets in the css of tags
+            ex: $('p').css("background-color", "yellow");
+            ex: $("p").css({"background-color": "yellow", "font-size": "200%"})
+
+
+    cbody.animate({width:'100px'}, 'slow');
+        animation in javscript using jQuery
+        first paramater: what you want the end product to before
+        second paramater: how fast you want the transition to be
+        
+    .after() = inserts parameter after each matched element aka adds on to the inner html
+    
+    .fadeToggle() -fade in and fade out- enter time in milaseconds

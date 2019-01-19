@@ -1,9 +1,10 @@
 "use strict";
 
 var menus = [
-    { name: 'Arrays', link: '/arrays.html' },
-    { name: 'Memory Game', link: '/ArrayP/array.html' },
-    { name: 'Memory Game - 3 cards to win!', link: 'ComingSoon.html' },
+    { name: 'Arrays', link: 'Array/arrays.html' },
+    { name: 'Memory Game', link: 'MemoryGame/MemoryGame.html' },
+    { name: 'Memory Game - 3 cards to win!', link: 'MemoryGame/MemoryGame3.html' },
+    { name: 'Memory Game jQuery', link: 'MemoryGame/MemoryGamejQuery.html' },
     { name: 'Ping Pong Paddle', link: 'ComingSoon.html' },
     { name: 'Wall Ball', link: 'ComingSoon.html' },
     { name: 'Clock', link: 'ComingSoon.html' },
