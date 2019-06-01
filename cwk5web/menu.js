@@ -5,6 +5,9 @@ var menus = [
     { name: 'Memory Game', link: 'MemoryGame/MemoryGame.html' },
     { name: 'Memory Game - 3 cards to win!', link: 'MemoryGame/MemoryGame3.html' },
     { name: 'Memory Game jQuery', link: 'MemoryGame/MemoryGamejQuery.html' },
+    { name: 'Caterpiller', link: 'caterpiller/c.html' },
+    { name: 'Bootstrap-HelloWorld', link: 'website-bootstrap.html' },
+    { name: 'Bootstrap-Slideshow', link: 'SlideShow/slideshow-v2.html' },
     { name: 'Ping Pong Paddle', link: 'ComingSoon.html' },
     { name: 'Wall Ball', link: 'ComingSoon.html' },
     { name: 'Clock', link: 'ComingSoon.html' },
@@ -18,7 +21,8 @@ var menus = [
     { name: 'Picture Puzzle', link: 'ComingSoon.html' },
     { name: 'Pipe Dream', link: 'ComingSoon.html' },
     { name: 'Google Maps', link: 'ComingSoon.html' },
-    { name: 'Class Project - My Awesome Project!', link: 'ComingSoon.html' }
+    { name: 'Class Project - My Awesome Project!', link: 'ComingSoon.html' },
+    { name: 'Calculator', link: 'simpleCalculator/Calculator.html' }
 ];
 
 function CreateMenu() {
@@ -29,13 +33,13 @@ function CreateMenu() {
     {
         var li = document.createElement('li');
         ul.appendChild(li);
-        li.innerHTML += "<a href='./Projects/" + menus[i].link + "' target='Project'>" + menus[i].name + "</a>";
+        li.innerHTML += "<a href='./Projects/JSProjects/" + menus[i].link + "' target='Project'>" + menus[i].name + "</a>";
     }
 }
 
 function LoadFirstMenuOption() {
     var projectFrame = document.getElementById('projectFrame');
-    projectFrame.setAttribute("src", './Projects/' + menus[1].link);
+    projectFrame.setAttribute("src", './Projects/JSProjects/' + menus[1].link);
 }
 
 

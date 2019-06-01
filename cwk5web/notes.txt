@@ -47,4 +47,66 @@ jQuery notes:
         
     .after() = inserts parameter after each matched element aka adds on to the inner html
     
+    .fadeToggle() -fade in and fade out- enter time in milasecondsDifferent type of divs:
+
+<header></header>
+<section></section>
+<footer></footer>
+<nav></nav>
+
+The positives of using these tag names is that web crawling bots will look that the text inside of these sections.
+This makes a website more likely to show up on a google search when you want it too.
+
+Web crawlers also look at the title tag inside of the header tag
+
+
+Link to the teacher's github:
+    https://github.com/nirmic/projects/
+    https://nirmic.github.io/projects/
+    
+
+
+Javascript Rant:
+
+setTimeout(function, time in milliseconds)
+    a function that makes the computer wait before running the inputted function adress by making a timer. 
+    This is NOT a delay because a delay would stop all other code during the wait time but this does not. 
+
+
+jQuery notes:
+    $(document).ready()
+        This tells the html script in jQuery to wait until the html is loaded before loading all of the javascript
+        This means you have to put all of the code in between the ()s.
+        
+    $(divName).html(content)
+        var content = string
+            sets the inner html of a div 
+    
+    $(divName).css(content)
+        var content = css code 
+            sets in the css of tags
+            ex: $('p').css("background-color", "yellow");
+            ex: $("p").css({"background-color": "yellow", "font-size": "200%"})
+
+
+    cbody.animate({width:'100px'}, 'slow');
+        animation in javscript using jQuery
+        first paramater: what you want the end product to before
+        second paramater: how fast you want the transition to be
+        
+    .after() = inserts parameter after each matched element aka adds on to the inner html
+    
     .fadeToggle() -fade in and fade out- enter time in milaseconds
+
+AJAX javscript:
+    Another libary.
+    It allows programmers to do server side 'calls'
+    
+Javascript vocab:
+    
+    f1(f2(f3()))
+    synchrous running:
+        Run f3, finish, run f2(), finish, run f1() and finish
+    asynchrous running (this can happen through AJAX):
+        run at start: f1(),                f2(),           f3()
+        run after:    f1(): still running; f2(): finished, f3(): still running

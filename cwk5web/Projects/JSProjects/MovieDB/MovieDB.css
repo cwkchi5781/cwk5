@@ -1,0 +1,27 @@
+/* "id > img" Only affect the images inside a table*/
+td > img {
+    height:6rem;
+}
+
+#head{
+    margin:auto;
+    text-align:center !important;
+}
+
+#movie-table {
+    width:80%;
+}
+
+#myContent{
+    height:40rem;
+    overflow-y:scroll;
+}
+
+/* "id > * > img" Will affect the images inside a table no matter what other tag are in between them*/
+
+#detail-view > * > img {
+    height:10rem;
+}
+#row > * > img {
+    width:100%;
+}

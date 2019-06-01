@@ -1,0 +1,52 @@
+.piece{
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    display: inline-block;
+    border-width:2px;
+    border-color:white;
+    border-style: solid;
+    margin:6px 6px 6px 6px;
+}
+
+.pieceWhite{
+    background-color:white;
+}
+
+.pieceBlack{
+    background-color:black;
+}
+
+.block{
+    width:40px;
+    height:40px;
+    border:0px;
+    margin:0px;
+}
+
+.blackBlock{
+    background-color: black;
+}
+
+.whiteBlock{
+    background-color: white;
+}
+
+#board{
+    width:320px;
+    height:320px;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    display:none;
+}
+
+.selected{
+    background-color: yellow;
+}
+
+.clicked{
+    box-shadow: 0px 0px 40px 20px #0ff;
+}

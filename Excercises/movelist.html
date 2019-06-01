@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(
+             function(){
+                 console.log("js is working!");
+                 list = "<ul> <li>apple</li> <li>death note</li> <li>quotes</li>";
+                 
+                 
+                 
+                 $("#one").css({"width":"200px","height":"400px" ,"border-style":"solid" ,"border-color":"black" ,"border-width":"1px"})
+                 $("#two").css({"width":"200px","height":"400px" ,"border-style":"solid" ,"border-color":"black" ,"border-width":"1px"})
+
+                 $("#one").append(list);
+                 
+                 $("button").click(function(){
+                     console.log("function is running");
+                     console.log($("#one").html());
+                     if($("#one").html() == ""){
+                        $("#one").html(list +  "</ul>");
+                        $("#two").html("");
+                        console.log("switch one");
+                     }else{
+                        $("#two").html(list + " </ul>");
+                        $("#one").html("");    
+                        console.log("switch two");
+                     }
+                     
+                $( "input" ).keyup(function() {
+                    var value = $( this ).val();
+                    list += ("<li>" + value + "</li>");
+                  });
+                 });
+                
+            });
+        </script>
+    </head>
+<body>
+    <button id="button">Move the list!</button>
+    <div id="one"></div>
+    <div id="two"></div>
+    
+     <input type="text" value="some text">
+    
+</body>
+</html>

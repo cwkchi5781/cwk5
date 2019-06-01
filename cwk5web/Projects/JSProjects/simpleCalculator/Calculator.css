@@ -1,0 +1,35 @@
+#calculator > .number, .operator{
+    width:50px;
+    height:50px;
+    background-color:black ;
+    color:white;
+}
+
+#calculator{
+    min-width:250px;
+    min-height: 450px;
+    max-height:300px;
+    max-width:500px;
+    
+    border-color: black;
+    border-style: solid;
+    border-width: 2.5px;
+    
+    margin:20px;
+}
+
+#results{
+    width: 150px;
+    height:50px;
+    
+    
+    
+    overflow: scroll;
+    border-color: black;
+    border-style: solid;
+    border-width: 2.5px;
+}
+
+.clicked{
+    background-color: blue;
+}

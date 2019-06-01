@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- Required meta tags for Bootstrap and JQuery -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS imports -->
+        <link href="./PicturePuzzle.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/ui-lightness/jquery-ui.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.css">
+    
+        <!-- JS Imports -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.js"></script>
+        <script>
+            // We've renamed the JQueryUI 'tooltip' and 'button' classes to 'uitooltip' and 'uibutton' so that they won't conflict with Bootstrap's 'tooltip' and 'button' classes.
+            $.widget.bridge('uitooltip', $.ui.tooltip);
+            $.widget.bridge('uibutton', $.ui.button);
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.js"></script>
+    </head>
+<body>
+    
+    <h1>Click picture to start!</h1>
+    
+    <img id="final" src="https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Pretty-Background-Tumblr-Download-Free-PIC-WPE001558.jpg"></img>
+    <select id="difficulty">
+        <option selected value="5 4">Easy</option>
+        <option value="8 6">Medium</option>
+        <option value="10 8">Hard</option>
+    </select>
+    <div id="drop-zone" class="picture"></div>
+    <br>
+    <div id="pieces" class="picture"></div>
+    
+</body>
+</html>

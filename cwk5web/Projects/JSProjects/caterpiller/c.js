@@ -6,11 +6,13 @@ $(document).ready(
     
     
     function(){
+        var bodyPartIds = []
         var chead = $('#head');
         var cbody = $("#tall");
         var caterpiller = $("#caterpiller");
+        var wholebody = $("all");
         
-        var segment = "<div class='body'></div>";
+        var segment = "<div class='body2 body'></div>";
         
         var buttonOne = $("#animator");
         var buttonTwo = $("#reset");
@@ -31,6 +33,16 @@ $(document).ready(
             
             
             
+        })
+        
+        buttonTwo.click(function() {
+            cbody.css({"margin-left":"0px", width:"50px"});
+            $(".body2").remove();
+        })
+        
+        buttonFour.click(function() {
+            cbody.after(segment);
+            caterpiller.remove(".body2");
         })
         
     }
