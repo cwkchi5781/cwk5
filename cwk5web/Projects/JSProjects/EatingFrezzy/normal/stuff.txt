@@ -1,0 +1,11 @@
+//var foods = new Foods(canvas, ctx);
+//var score = new Score(canvas, ctx);
+//var monster = new Monster(canvas, ctx);
+//var refreshCounter = 0; 
+
+
+//var foodEatenCounter = foods.Refresh(refreshCounter);
+    //score.Refresh(foodEatenCounter);
+    //monster.Refresh(refreshCounter);
+
+    //refreshCounter++;
